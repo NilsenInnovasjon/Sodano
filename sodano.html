@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="no"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><title>Sodano Catering – Napolitansk catering, privatkokk og matkurs i Oslo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>*,*::before,*::after{box-sizing:border-box}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-behavior:smooth}
+body{margin:0;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 1.5rem}
+.draft{font-size:.76rem;text-align:center;padding:.45rem 1rem}
+.fade-up{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.fade-up.in{opacity:1;transform:none}
+.dot{width:.6rem;height:.6rem;border-radius:50%;background:#9a9a9a;display:inline-block}
+.dot.open{background:#2FA36B;box-shadow:0 0 0 4px rgba(47,163,107,.18)}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.hours li:last-child{border-bottom:0}
+.hours li.today{font-weight:700}
+.it{display:flex;align-items:baseline;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.it .nm small{display:block;font-size:.88rem;opacity:.7;margin-top:.15rem}
+.it .fl{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-.35rem);min-width:1rem}
+.it .pr{white-space:nowrap}
+.sticky{position:fixed;left:0;right:0;bottom:0;transform:translateZ(0);padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom,0px));display:none;gap:.6rem;z-index:20}
+.sticky a{flex:1}
+@media (max-width:640px){.sticky{display:flex}body{padding-bottom:5.6rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.fade-up{opacity:1;transform:none}}
+:root{--bg:#F5F0E8;--ink:#171412;--soft:#3D3631;--red:#B3261E;--basil:#2F4A2C;--line:#DCD3C6;--dark:#171412}
+body{background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-size:1.08rem;line-height:1.7}
+.draft{background:#000;color:#A39C94;font-size:.74rem;text-align:center;padding:.4rem}
+a{color:inherit}
+.wrap{max-width:1320px;padding-left:clamp(1.25rem,4vw,3.5rem);padding-right:clamp(1.25rem,4vw,3.5rem)}
+.k{font-size:.88rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin:0 0 1.4rem}
+.lnk{display:inline-flex;gap:.5rem;text-decoration:none;font-size:.88rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:.25rem}
+.lnk:hover{opacity:.6}
+.btn{display:inline-block;text-decoration:none;font-size:.88rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:1.05rem 2rem;background:var(--ink);color:var(--bg);transition:background .3s}
+.btn:hover{background:var(--red)}.btn.red{background:var(--red)}.btn.red:hover{background:#8E1D17}.btn.lt{background:var(--bg);color:var(--ink)}
+h2{font-family:"Bodoni Moda",Didot,serif;font-weight:500;font-size:clamp(2.6rem,6vw,5.2rem);line-height:.98;text-transform:uppercase;letter-spacing:.01em;margin:0}
+h2 i{font-style:italic;text-transform:none;color:var(--red);font-weight:500}
+section{padding:8rem 0}
+.hdr{position:sticky;top:0;z-index:40;background:rgba(245,240,232,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding-top:1.1rem;padding-bottom:1.1rem}
+.hdr nav{display:flex;gap:1.8rem}.hdr nav a{text-decoration:none;font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}.hdr nav a:hover{color:var(--red)}
+.logo{font-family:"Bodoni Moda",Didot,serif;font-weight:600;font-size:1.6rem;letter-spacing:.26em;text-decoration:none;text-transform:uppercase;padding-left:.26em}
+.hdr .r{display:flex;justify-content:flex-end}
+.hdr .r a{text-decoration:none;font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;border:1px solid var(--ink);padding:.7rem 1.3rem}
+.hdr .r a:hover{background:var(--ink);color:var(--bg)}
+@media (max-width:900px){.hdr nav{display:none}.hdr .wrap{grid-template-columns:auto 1fr}}
+.ph{position:relative;overflow:hidden;background:#D9CDBC}
+.ph::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .16 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");mix-blend-mode:multiply}
+.ph .lbl{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1rem;color:rgba(23,20,18,.65)}
+.ph .lbl b{font-family:"Bodoni Moda",Didot,serif;font-weight:500;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:.14em;text-transform:uppercase}
+.ph .lbl small{font-size:.92rem;margin-top:.4rem;max-width:24ch}
+/* hero */
+.hero{padding:3.4rem 0 0}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+@media (max-width:900px){.hg{grid-template-columns:1fr}}
+.big{font-family:"Bodoni Moda",Didot,serif;font-weight:500;font-size:clamp(4.6rem,14vw,13rem);line-height:.82;letter-spacing:.02em;margin:0;text-transform:uppercase;overflow:hidden}
+.big span{display:inline-block;transform:translateY(105%);animation:up 1.4s cubic-bezier(.2,.8,.2,1) .15s forwards}
+@keyframes up{to{transform:none}}
+.sub{font-family:"Bodoni Moda",Didot,serif;font-style:italic;font-weight:500;font-size:clamp(1.9rem,3.6vw,3rem);color:var(--red);margin:1rem 0 0;opacity:0;animation:fade 1s .8s forwards}
+.hp{font-size:1.22rem;color:var(--soft);max-width:42ch;margin:1.6rem 0 2.2rem;opacity:0;animation:fade 1s 1s forwards}
+.acts{display:flex;gap:1.6rem;align-items:center;flex-wrap:wrap;opacity:0;animation:fade 1s 1.2s forwards}
+@keyframes fade{to{opacity:1}}
+.hero .ph{aspect-ratio:4/5}
+.tri{display:flex;height:4px;margin-top:4.4rem}.tri i{flex:1}.tri i:nth-child(1){background:var(--basil)}.tri i:nth-child(2){background:#EFE9DE}.tri i:nth-child(3){background:var(--red)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr)}
+@media (max-width:760px){.facts{grid-template-columns:1fr}}
+.facts div{padding:1.3rem 1.4rem 1.4rem 0}
+@media (min-width:761px){.facts div+div{border-left:1px solid var(--line);padding-left:1.4rem}}
+.facts b{display:block;font-family:"Bodoni Moda",Didot,serif;font-weight:600;font-size:1.8rem;line-height:1.1;text-transform:uppercase}
+.facts span{color:var(--soft);font-size:1.02rem}
+/* story with route */
+.sg{display:grid;grid-template-columns:repeat(12,1fr);gap:1.6rem;align-items:start}
+.sg h2{grid-column:1/9}
+.sg .t{grid-column:7/13;margin-top:2.6rem}
+.sg .t p{font-size:1.22rem;color:#1E1A17;max-width:46ch;margin:0 0 1.4rem}
+@media (max-width:900px){.sg h2,.sg .t{grid-column:1/-1;margin-top:0}}
+.route{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin-top:5rem}
+.route::before{content:"";position:absolute;left:0;right:0;top:11px;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform 2.2s cubic-bezier(.6,0,.2,1)}
+.route.in::before{transform:scaleX(1)}
+.stop{position:relative;padding-top:2.4rem;opacity:.25;transition:opacity .6s}
+.route.in .stop{opacity:1}
+.route.in .stop:nth-child(2){transition-delay:.5s}.route.in .stop:nth-child(3){transition-delay:1s}.route.in .stop:nth-child(4){transition-delay:1.5s}
+.stop::before{content:"";position:absolute;left:0;top:4px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
+.stop:last-child::before{background:var(--red);border-color:var(--red)}
+.stop b{display:block;font-family:"Bodoni Moda",Didot,serif;font-weight:600;font-size:clamp(1.6rem,2.6vw,2.4rem);text-transform:uppercase;line-height:1}
+.stop span{color:var(--soft)}
+@media (max-width:640px){.route{grid-template-columns:1fr 1fr;row-gap:2rem}}
+/* services */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3.6rem}
+@media (max-width:900px){.three{grid-template-columns:1fr}}
+.sv .ph{aspect-ratio:4/5}
+.sv:nth-child(2) .ph{background:#CFC1AE}.sv:nth-child(3) .ph{background:#C4B39D}
+.sv h3{font-family:"Bodoni Moda",Didot,serif;font-weight:600;font-size:2.2rem;text-transform:uppercase;margin:1.4rem 0 .4rem;line-height:1}
+.sv p{margin:0 0 1rem;color:var(--soft)}
+/* masterclasses */
+.mc{background:var(--dark);color:#F1EBE2}
+.mc h2 i{color:#E8857B}
+.mc .k{color:#D6D0C8}
+.classes{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:3.6rem}
+@media (max-width:900px){.classes{grid-template-columns:1fr}}
+.cl{border:1px solid #3A332E;padding:2.6rem;display:flex;flex-direction:column}
+.cl .top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.cl h3{font-family:"Bodoni Moda",Didot,serif;font-weight:600;font-size:clamp(2rem,3.4vw,2.8rem);text-transform:uppercase;margin:0;line-height:1}
+.cl .dur{color:#E8857B;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.84rem;white-space:nowrap}
+.cl p{color:#D6D0C8;margin:1.2rem 0 1.4rem}
+.cl ul{list-style:none;margin:0 0 2rem;padding:0;border-top:1px solid #3A332E}
+.cl li{padding:.75rem 0;border-bottom:1px solid #3A332E;font-size:1.05rem}
+.cl li::before{content:"—  ";color:#E8857B}
+.cl .btn{align-self:flex-start;margin-top:auto}
+.mc .note{margin-top:2.4rem;color:#BDB6AD}
+/* values */
+.vals{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:3.6rem}
+@media (max-width:900px){.vals{grid-template-columns:1fr}}
+.vals div{padding:2rem 1.6rem 2rem 0}
+@media (min-width:901px){.vals div+div{border-left:1px solid var(--line);padding-left:1.6rem}}
+.vals b{display:block;font-family:"Bodoni Moda",Didot,serif;font-weight:600;font-size:1.9rem;text-transform:uppercase;line-height:1.05;margin-bottom:.6rem}
+.vals p{margin:0;color:var(--soft)}
+/* events */
+.ev{background:#EDE5D8;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.eg{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+@media (max-width:900px){.eg{grid-template-columns:1fr;gap:2.4rem}}
+.ev .ph{aspect-ratio:5/4;background:#CDBFAA}
+.ev p{font-size:1.2rem;color:var(--soft);max-width:44ch;margin:1.6rem 0 2rem}
+.ft{background:var(--dark);color:#EDE8E1;padding:6rem 0 3rem}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.4rem}
+@media (max-width:900px){.fg{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.fg{grid-template-columns:1fr}}
+.ft .logo{font-size:2.4rem;color:#fff}
+.ft h4{font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:#BDB6AD;margin:0 0 1rem}
+.ft p{margin:0 0 .4rem;font-size:1.08rem}.ft a{text-decoration:none}.ft a:hover{opacity:.6}
+.ft .bottom{border-top:1px solid #2E2B28;margin-top:4rem;padding-top:1.6rem;display:flex;justify-content:space-between;font-size:.9rem;color:#ADA69E;flex-wrap:wrap;gap:1rem}
+.sticky{background:var(--bg);border-top:1px solid var(--line)}
+.sticky a{flex:1;text-align:center;padding:.95rem .6rem;text-decoration:none;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;border:1px solid var(--ink)}
+.sticky a.dk{background:var(--red);border-color:var(--red);color:#fff}
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+@media (prefers-reduced-motion:reduce){.big span{transform:none}.sub,.hp,.acts{opacity:1}.route::before{transform:none}.stop{opacity:1}}
+</style></head><body>
+<div class="draft">Forslag til ny nettside for Sodano Catering, laget av VLN. Ikke publisert ennå.</div>
+<header class="hdr"><div class="wrap">
+ <nav aria-label="Meny"><a href="#antonio">Antonio</a><a href="#tjenester">Tjenester</a><a href="#kurs">Matkurs</a><a href="#kontakt">Kontakt</a></nav>
+ <a class="logo" href="#">Sodano</a>
+ <div class="r"><a href="#kurs">Book kurs</a></div>
+</div></header>
+<section class="hero" style="padding-bottom:0"><div class="wrap">
+ <div class="hg">
+  <div>
+   <h1 class="big"><span>Sodano</span></h1>
+   <p class="sub">cucina napoletana, a Oslo</p>
+   <p class="hp">Catering, privatkokk og matkurs med napolitansk tradisjon, sesongens beste råvarer og en kokk som har laget mat i Italia, USA, England og nå Oslo.</p>
+   <div class="acts"><a class="btn red" href="#kurs">Book et matkurs</a><a class="lnk" href="#kontakt">Spør om catering</a></div>
+  </div>
+  <div class="ph"><span class="lbl"><b>Bilde</b><small>f.eks. Antonio på kjøkkenet</small></span></div>
+ </div>
+ <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+ <div class="facts"><div><b>Catering</b><span>Til selskap, jobb og hjemme</span></div><div><b>Privatkokk</b><span>En italiensk middag hjemme hos deg</span></div><div><b>Matkurs</b><span>Pasta og pizza, laget fra bunnen</span></div></div>
+</div></section>
+<section id="antonio"><div class="wrap">
+ <div class="sg">
+  <h2 class="fade-up">Fra Napoli <i>til Oslo</i></h2>
+  <div class="t fade-up">
+   <p class="k">Antonio Sodano</p>
+   <p>Antonio er født og oppvokst i Napoli, der god mat er en del av hverdagen. Lidenskapen tok ham videre som kokk i Italia, USA og England, og nå lager han napolitansk mat i Oslo.</p>
+   <p>Han lager mat med røtter i tradisjonen, med ferske råvarer fra sesongen, og med et øye for helse og bærekraft.</p>
+  </div>
+ </div>
+ <div class="route" id="route"><div class="stop"><b>Napoli</b><span>Der det begynte</span></div><div class="stop"><b>USA</b><span>Kokk</span></div><div class="stop"><b>England</b><span>Kokk</span></div><div class="stop"><b>Oslo</b><span>Sodano Catering</span></div></div>
+</div></section>
+<section id="tjenester" style="padding-top:0"><div class="wrap">
+ <p class="k">Tjenester</p><h2 class="fade-up">Tre måter å <i>spise Napoli</i></h2>
+ <div class="three">
+  <article class="sv fade-up"><div class="ph"><span class="lbl"><b>Bilde</b><small>f.eks. et koldtbord</small></span></div><h3>Catering</h3><p>Mat til bursdag, jobblunsj, firmafest eller bryllup, med menyer tilpasset anledningen og gjestene.</p><a class="lnk" href="#kontakt">Spør om meny</a></article>
+  <article class="sv fade-up"><div class="ph"><span class="lbl"><b>Bilde</b><small>f.eks. Antonio i et hjemmekjøkken</small></span></div><h3>Privatkokk</h3><p>Antonio kommer hjem til deg og lager en italiensk middag, så du kan nyte kvelden sammen med gjestene.</p><a class="lnk" href="#kontakt">Book privatkokk</a></article>
+  <article class="sv fade-up"><div class="ph"><span class="lbl"><b>Bilde</b><small>f.eks. fersk pasta</small></span></div><h3>Matkurs</h3><p>Lær å lage pasta og napolitansk pizza fra bunnen, hjemme hos deg eller på et av kurskjøkkenene våre.</p><a class="lnk" href="#kurs">Se kursene</a></article>
+ </div>
+</div></section>
+<section class="mc" id="kurs"><div class="wrap">
+ <p class="k">Matkurs</p><h2 class="fade-up">Masterclass <i>i pasta og pizza</i></h2>
+ <div class="classes">
+  <article class="cl fade-up"><div class="top"><h3>Pasta</h3><span class="dur">3–4 timer</span></div>
+   <p>Et intenst kurs der du lærer tre oppskrifter og teknikker for fersk pasta. Middag og drikke er inkludert.</p>
+   <ul><li>Deig med egg, med vann og farget pasta</li><li>Kjevling for hånd og med maskin</li><li>Enkle fyll</li><li>Gnocchi, ravioli, lasagne og spaghetti</li></ul>
+   <a class="btn red" href="https://sodanocatering.understory.io/experience/f1832645ec909f49c1c32104ba79a640">Book pastakurs</a></article>
+  <article class="cl fade-up"><div class="top"><h3>Pizza</h3><span class="dur">3–4 timer</span></div>
+   <p>Hele veien til den perfekte deigen og den perfekte pizzaen, hjemme hos deg eller på et av kurskjøkkenene våre.</p>
+   <ul><li>Tre teknikker for å blande deig</li><li>Heving og fermentering</li><li>Deling og utrulling av deigboller</li><li>Steketid og temperatur</li></ul>
+   <a class="btn red" href="https://sodanocatering.understory.io/experience/8ea7dbce664dbe2f719c0b1214bb9f8e">Book pizzakurs</a></article>
+ </div>
+ <p class="note">Begge kursene kan også holdes for større grupper, for eksempel som firmaarrangement.</p>
+</div></section>
+<section><div class="wrap">
+ <p class="k">Filosofi</p><h2 class="fade-up">Enkelt, <i>ekte og ferskt</i></h2>
+ <div class="vals">
+  <div class="fade-up"><b>Tradisjon</b><p>Oppskrifter med røtter i det napolitanske kjøkkenet.</p></div>
+  <div class="fade-up"><b>Sesong</b><p>Råvarer av topp kvalitet, valgt etter hva som er best akkurat nå.</p></div>
+  <div class="fade-up"><b>Bærekraft</b><p>Mat som er god både for deg og for verden rundt.</p></div>
+ </div>
+</div></section>
+<section class="ev"><div class="wrap eg">
+ <div class="ph"><span class="lbl"><b>Bilde</b><small>f.eks. et langbord med gjester</small></span></div>
+ <div class="fade-up"><p class="k">Arrangementer</p><h2>Til hele <i>firmaet</i></h2><p>Planlegger dere julebord, kickoff eller teambuilding? Et pasta- eller pizzakurs med middag etterpå blir et arrangement folk husker.</p><a class="btn" href="#kontakt">Spør om arrangement</a></div>
+</div></section>
+<footer class="ft" id="kontakt"><div class="wrap">
+ <div class="fg">
+  <div><a class="logo" href="#">Sodano</a><p style="margin-top:1.2rem;color:#C9C2B9;max-width:28ch">Napolitansk catering, privatkokk og matkurs i Oslo.</p></div>
+  <div><h4>Adresse</h4><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Sodano%20Catering%20Ingelbrecht%20Knudss%C3%B8ns%20gate%2011%20Oslo">Ingelbrecht Knudssøns gate 11<br>0365 Oslo</a></p></div>
+  <div><h4>Kontakt</h4><p><a href="tel:+47xxxxxxxx">Telefon og WhatsApp: xxx xx xxx</a></p></div>
+  <div><h4>Book</h4><p><a href="https://sodanocatering.understory.io/experience/f1832645ec909f49c1c32104ba79a640">Pastakurs</a></p><p><a href="https://sodanocatering.understory.io/experience/8ea7dbce664dbe2f719c0b1214bb9f8e">Pizzakurs</a></p></div>
+ </div>
+ <div class="bottom"><span>© Sodano Catering</span><span>Majorstuen, Oslo</span></div>
+</div></footer>
+<div class="sticky"><a href="tel:+47xxxxxxxx">Ring</a><a class="dk" href="#kurs">Book kurs</a></div>
+<script>new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){e[0].target.classList.add('in');o.disconnect()}},{threshold:.4}).observe(document.getElementById('route'));</script>
+<script>const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));</script></body></html>
